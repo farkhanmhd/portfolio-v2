@@ -11,6 +11,8 @@
   --text-display: clamp(64px, 7.5vw, 116px);
   --text-display-tablet: clamp(48px, 10vw, 80px);
   --text-display-phone: clamp(24px, 7.3vw, 35px);
+  --text-contact: clamp(48px, 8vw, 104px);
+  --text-contact-email: clamp(18px, 3vw, 36px);
   --leading-profile: 1.15;
   --leading-display: 0.98;
   --tracking-profile: -0.035em;
@@ -105,6 +107,12 @@
 }
 
 @layer components {
+  .profile-section {
+    @apply max-phone:py-12 flex min-h-dvh scroll-mt-[calc(var(--header-height)+24px)] flex-col justify-center py-20;
+  }
+  .profile-row {
+    @apply max-tablet:grid-cols-1 max-tablet:gap-6 grid grid-cols-[1fr_2fr] gap-12;
+  }
   .intro-content:focus-within {
     opacity: 1 !important;
     transform: none !important;

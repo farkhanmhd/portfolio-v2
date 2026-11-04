@@ -1,5 +1,23 @@
 # Portfolio direction
 
+Scroll reveal timing refinement: section and footer reveals wait 200ms after entering the scroll viewport, then animate transform/opacity for 600ms so arrival is easier to perceive. Reduced motion uses zero delay and duration, with existing focus overrides retained. Reveals remain one-time and intersection-triggered.
+
+## Skills and shell refinement
+
+Skills now group the supplied technologies by Frontend, Backend & Languages, and Data. Muted category labels and larger Manrope technology names provide scan hierarchy; wrapping lists avoid decorative badges and preserve the borderless direction. The menu's bottom row places GitHub and Résumé at opposite edges with matching typography and existing Motion variants. A min-height viewport flex shell gives main content the remaining space, keeping the footer at the bottom on short routes such as Not Found without overlaying long-page content. Existing ENERGY 2 / RHYTHM 2 / MOTION 2 and reduced-motion behavior remain.
+
+## Borderless and contact refinement
+
+Section and footer rules are removed at the owner's request; only the two header islands retain visible borders. Whitespace separates content. The hero minimum height returns to `calc(100dvh - var(--header-height))`, allowing it to fit below the header while growing on short screens. Contact uses a fluid large Manrope headline and larger email link to give the final action a clear focal point. The menu joins Experience & Education at the combined section's start and restores the existing résumé destination as a main link. Other section heights, scroll reveals and reduced-motion behavior remain unchanged.
+
+## Experience-focused content revision
+
+Viewport refinement: hero, combined experience/education, skills, and contact each have a minimum 100dvh height and may grow with their content. Centering gives each section a clear reading moment; experience and education share one reveal as related qualifications. Section entrances use viewport visibility rather than mount animation, while reduced-motion and focus overrides keep content accessible. Education retains its menu anchor inside the combined section. Footer replaces the email action with copyright and the year from `new Date().getFullYear()`.
+
+Reading this as a full-stack developer portfolio for hiring teams, preserving the black, typographic visual language. Dial: ENERGY 2 / RHYTHM 2 / MOTION 2.
+
+The centered hero remains the incumbent visual baseline. Experience and education use label/detail rows so qualifications scan clearly; skills use a plain list rather than decorative badges. Contact ends with the existing email, GitHub, and résumé destinations. Section rules and generous vertical spacing separate résumé entries without enclosing them in cards. Manrope headings, JetBrains Mono details, black background, and blue links preserve the owner's existing identity. One existing Motion scroll reveal per section guides reading order using only transform and opacity, with reduced-motion and keyboard overrides. The menu follows the four section anchors. Project display and the public project detail route are removed; retained content source is not imported into the application.
+
 ## Intro sequence
 
 The owner requests the header islands and hero content to start invisible. Motion reveals the islands first, then the two-line headline with a one-time sequential decryption adapted from React Bits, then the subtitle and actions. Glyph cells reserve the real letters' widths, and temporary glyphs are fitted within them. The full headline remains available to assistive technology. Reduced motion bypasses the intro and scrambling; keyboard focus immediately reveals entrance containers. No new dependencies are needed.

@@ -57,56 +57,94 @@ const MenuPanel = ({ close }: { close: () => void }) => {
           </Dialog.Close>
         </div>
         <Dialog.Description className="sr-only">
-          Explore selected work, résumé, and contact links.
+          Navigate to experience and education, skills, certifications, awards,
+          contact, and résumé.
         </Dialog.Description>
         <nav aria-label="Main navigation" className="my-auto py-14">
           <ul className="font-heading max-phone:text-4xl flex flex-col gap-5 text-5xl font-medium tracking-tight">
-            <motion.li className="py-1" custom={0} variants={label}>
-              <Link
-                className="menu-label inline-flex min-h-11 cursor-pointer items-center no-underline"
-                hash="work"
-                hashScrollIntoView={{
-                  behavior: reducedMotion === true ? "instant" : "smooth",
-                  block: "start",
-                }}
-                onClick={close}
-                to="/"
+            {[
+              { id: "journey", title: "Journey" },
+              { id: "skills", title: "Skills" },
+              { id: "certifications", title: "Certifications" },
+              { id: "awards", title: "Awards" },
+              { id: "contact", title: "Contact" },
+            ].map((section, index) => (
+              <motion.li
+                className="py-1"
+                custom={index}
+                key={section.id}
+                variants={label}
               >
-                Work
-              </Link>
-            </motion.li>
-            <motion.li className="py-1" custom={1} variants={label}>
-              <a
-                className="menu-label inline-flex min-h-11 cursor-pointer items-center no-underline"
-                href="https://drive.google.com/file/d/1mb-CPqJSxnHa2YIgsT_DR5-y20rncqrL/view?usp=sharing"
-                onClick={close}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Résumé
-              </a>
-            </motion.li>
-            <motion.li className="py-1" custom={2} variants={label}>
-              <a
-                className="menu-label inline-flex min-h-11 cursor-pointer items-center no-underline"
-                href="mailto:farkhanmuhammad@outlook.com"
-                onClick={close}
-              >
-                Let’s talk
-              </a>
-            </motion.li>
+                <Link
+                  className="menu-label inline-flex min-h-11 cursor-pointer items-center text-balance no-underline"
+                  hash={section.id}
+                  hashScrollIntoView={{
+                    behavior: reducedMotion === true ? "instant" : "smooth",
+                    block: "start",
+                  }}
+                  onClick={close}
+                  to="/"
+                >
+                  {section.title}
+                </Link>
+              </motion.li>
+            ))}
           </ul>
         </nav>
-        <motion.a
-          className="menu-label flex min-h-11 w-fit items-center text-sm"
-          href="https://github.com/farkhanmhd"
-          rel="noopener noreferrer"
-          target="_blank"
-          custom={3}
-          variants={label}
-        >
-          GitHub
-        </motion.a>
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex items-center gap-6">
+            <motion.a
+              className="menu-label flex min-h-11 w-fit items-center text-sm"
+              href="https://github.com/farkhanmhd"
+              rel="noopener noreferrer"
+              target="_blank"
+              custom={3}
+              variants={label}
+            >
+              GitHub
+            </motion.a>
+            <motion.a
+              className="menu-label flex min-h-11 w-fit items-center text-sm"
+              href="https://www.linkedin.com/in/farkhanmhd/"
+              rel="noopener noreferrer"
+              target="_blank"
+              custom={3}
+              variants={label}
+            >
+              LinkedIn
+            </motion.a>
+            <motion.a
+              className="menu-label flex min-h-11 w-fit items-center text-sm"
+              href="https://instagram.com/farkhanmhd"
+              rel="noopener noreferrer"
+              target="_blank"
+              custom={3}
+              variants={label}
+            >
+              Instagram
+            </motion.a>
+          </div>
+          <div className="flex items-center gap-6">
+            <motion.div custom={3} variants={label}>
+              <Link
+                className="menu-label flex min-h-11 w-fit items-center text-sm"
+                onClick={close}
+                to="/resume"
+              >
+                Résumé
+              </Link>
+            </motion.div>
+            <motion.div custom={3} variants={label}>
+              <Link
+                className="menu-label flex min-h-11 w-fit items-center text-sm"
+                onClick={close}
+                to="/certificates"
+              >
+                Certificates
+              </Link>
+            </motion.div>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   );

@@ -20,7 +20,11 @@ export const ScrollReveal = ({ children }: { children: ReactNode }) => {
     >
       <motion.div
         className="focus-within:transform-none! focus-within:opacity-100! motion-reduce:transform-none! motion-reduce:opacity-100!"
-        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+        transition={{
+          delay: reducedMotion === true ? 0 : 0.2,
+          duration: reducedMotion === true ? 0 : 0.6,
+          ease: [0.22, 1, 0.36, 1],
+        }}
         variants={{
           hidden: { opacity: 0, transform: "translateY(24px)" },
           visible: { opacity: 1, transform: "translateY(0px)" },

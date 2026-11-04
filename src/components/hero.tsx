@@ -1,7 +1,13 @@
 // Preserve the owner's existing rounded hero buttons while changing only their entrance.
 /* oxlint-disable shadcn/no-restyle */
-import { GithubIcon, Mail01Icon } from "@hugeicons/core-free-icons";
+import {
+  Certificate01Icon,
+  File01Icon,
+  GithubIcon,
+  Mail01Icon,
+} from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { Link } from "@tanstack/react-router";
 import { motion, useReducedMotion } from "motion/react";
 
 import { DecryptedText } from "./decrypted-text";
@@ -23,7 +29,8 @@ export const Hero = () => {
         <span aria-hidden="true">
           {["From interface", "to infrastructure."].map((line, index) => (
             <motion.span
-              animate={{ opacity: 1, transform: "translateY(0)" }}
+              whileInView={{ opacity: 1, transform: "translateY(0)" }}
+              viewport={{ once: true }}
               className="block whitespace-nowrap motion-reduce:transform-none! motion-reduce:opacity-100!"
               initial={
                 reducedMotion === true
@@ -48,7 +55,8 @@ export const Hero = () => {
             ? false
             : { opacity: 0, transform: "translateY(12px)" }
         }
-        animate={{ opacity: 1, transform: "translateY(0px)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+        viewport={{ once: true }}
         transition={{ duration: 0.45, delay: 1.8 }}
         className="intro-content text-muted-foreground max-phone:text-sm max-w-xl text-base"
       >
@@ -60,7 +68,8 @@ export const Hero = () => {
             ? false
             : { opacity: 0, transform: "translateY(12px)" }
         }
-        animate={{ opacity: 1, transform: "translateY(0px)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+        viewport={{ once: true }}
         transition={{ duration: 0.45, delay: 2 }}
         className="intro-content flex flex-wrap justify-center gap-4"
       >
@@ -97,6 +106,36 @@ export const Hero = () => {
             />
             GitHub
           </a>
+        </Button>
+        <Button
+          asChild
+          className="min-h-11 min-w-28 rounded-2xl"
+          size="lg"
+          variant="ghost"
+        >
+          <Link to="/resume">
+            <HugeiconsIcon
+              aria-hidden="true"
+              data-icon="inline-start"
+              icon={File01Icon}
+            />
+            Résumé
+          </Link>
+        </Button>
+        <Button
+          asChild
+          className="min-h-11 min-w-28 rounded-2xl"
+          size="lg"
+          variant="ghost"
+        >
+          <Link to="/certificates">
+            <HugeiconsIcon
+              aria-hidden="true"
+              data-icon="inline-start"
+              icon={Certificate01Icon}
+            />
+            Certificates
+          </Link>
         </Button>
       </motion.div>
     </section>

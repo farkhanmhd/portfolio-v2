@@ -3,14 +3,14 @@ import {
   createRoute,
   createRouter,
   Link,
-  notFound,
   Outlet,
   RouterProvider,
 } from "@tanstack/react-router";
 
+import { CertificatesPage } from "./components/certificates-page";
 import { HomePage } from "./components/home-page";
+import { ResumePage } from "./components/resume-page";
 import { SiteShell } from "./components/site-shell";
-import { projects } from "./content/projects";
 
 const NotFound = () => (
   <section>
@@ -34,35 +34,24 @@ const indexRoute = createRoute({
   component: HomePage,
 });
 
-const projectRoute = createRoute({
+const certificatesRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/projects/$slug",
-  loader: ({ params }) => {
-    const project = projects.find((item) => item.slug === params.slug);
+  path: "/certificates",
+  component: CertificatesPage,
+});
 
-    if (!project) {
-      // TanStack Router uses a not-found sentinel to select its fallback UI.
-      // oxlint-disable-next-line typescript/only-throw-error
-      throw notFound();
-    }
-
-    return project;
-  },
-  component: () => {
-    const { title, Content } = projectRoute.useLoaderData();
-
-    return (
-      <article>
-        <Link to="/">Back home</Link>
-        <h1>{title}</h1>
-        <Content />
-      </article>
-    );
-  },
+const resumeRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/resume",
+  component: ResumePage,
 });
 
 const router = createRouter({
-  routeTree: rootRoute.addChildren([indexRoute, projectRoute]),
+  routeTree: rootRoute.addChildren([
+    indexRoute,
+    certificatesRoute,
+    resumeRoute,
+  ]),
   scrollRestoration: true,
   scrollToTopSelectors: ["#page-scroll-viewport"],
 });
