@@ -1,0 +1,58 @@
+{
+  "scope": "Motion intro sequence for islands and hero with adapted DecryptedText",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/decrypted-text.tsx",
+      "sha256": "5ca60fd8e792da7605e1d8648a5d2b8730b971511502d027cb3ee861b5616bb9"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "02c35888f508b622f2dbab0f07ac97e64476606643d2f3dd07600f0856076375"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/site-header.tsx",
+      "sha256": "5d40250a15edf9ad2083ad34d21d43e4a0fd553bb483747467cdc0ce40765f80"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "856cf4b7ef8980df2dd65d069406a7b61c4a56dcaeda3f844e68e0709139a43a"
+    }
+  ],
+  "verification": [
+    "Playwright CLI DOM observer verified initial inline opacity 0 on five entrance containers",
+    "1440x900 intermediate scramble and settled captures inspected",
+    "Headline resolves to exact original text; menu open/Escape focus return passed",
+    "320x740 reduced motion: exact readable text, no headline overflow; capture inspected",
+    "bun run check and bun run build pass"
+  ],
+  "skills": {
+    "karpathy-guidelines": "Minimal one-time adaptation instead of unused hover/loop API",
+    "ultracite": "Formatting and project checks; preserved preexisting owner button shape with documented rule exception",
+    "framer-motion-react": "Motion entrances and numeric animate driver",
+    "animation-performance": "Bounded text updates outside React state, cleanup on unmount, transform/opacity entrances",
+    "ui-taste": "Existing palette, type and layout retained; captures inspected",
+    "antislop": "Single intro, no fake content, readable reduced-motion path",
+    "design-auditor": "Scoped layout, typography, semantics, motion and focus review",
+    "shadcn": "Existing ghost actions retained",
+    "playwright-cli": "Actual initial-state, settled, mobile, reduced-motion and interaction assertions"
+  },
+  "captures": [
+    {
+      "path": "decrypting.png",
+      "sha256": "4cecc28d0f1dd4231796f28666a64032e5e363531bac1670f81336e2d1f12782"
+    },
+    {
+      "path": "desktop.png",
+      "sha256": "42902f714f733b592fb1d7f34e8734e661668a754939e45973b82269f2a09559"
+    },
+    {
+      "path": "mobile-reduced.png",
+      "sha256": "b57d1453de502730845ad37df058ab123c053297a16179336988ef8e37943c37"
+    }
+  ],
+  "limitations": [
+    "No physical-device frame profiling or motion video review",
+    "Build reports existing bundle warning",
+    "External contact/GitHub links retained but not activated"
+  ]
+}

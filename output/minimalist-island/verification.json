@@ -1,0 +1,36 @@
+{
+  "scope": "Remove LightRays, monochrome hero, floating capsule navigation",
+  "comparison": "existing-system",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "111c6c2603ac8a55045857f952eb88af68bd8374050573ecbf626b1ed8d2cab3"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/site-header.tsx",
+      "sha256": "0016910d7f26a1453e089ee6d7168f455c773a402ea51ac9d2adb1c937a103a8"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "95305e9891d9356c77400bfacd8c05c411dd10066db0d2d661afe89e06ef2aa4"
+    }
+  ],
+  "checks": {
+    "lint": "bun run check passed",
+    "build": "bun run build passed",
+    "removal": "No LightRays references in src, package.json or bun.lock. No packages were added for LightRays.",
+    "sourceAudit": "Semantic navigation and existing destinations retained. Navigation links have minimum 44px heights, hover/active states and inherited focus outlines. Hero uses inherited foreground color. Existing reduced-motion overrides retained.",
+    "browser": "Blocked: browser.user is unavailable when accessing the current tab. Desktop/mobile rendering, keyboard, links and reduced-motion have not been verified for this revision."
+  },
+  "skills": {
+    "karpathy-guidelines": "Narrow edits; no new packages or abstractions",
+    "ultracite": "Formatted changed components and ran check/build",
+    "ui-taste": "Existing minimalist visual system retained",
+    "antislop": "Real links, semantic controls, no extra decoration",
+    "design-auditor": "Source review of affected spacing, responsive, focus, motion and semantics",
+    "framer-motion-react": "Existing reduced-motion-aware text entrance retained",
+    "animation-performance": "Removed WebGL loop and header backdrop blur; retained transform/opacity entrance",
+    "shadcn": "Existing ghost Button variants retained",
+    "playwright-cli": "Unavailable; attempted in-app browser fallback, also blocked"
+  }
+}

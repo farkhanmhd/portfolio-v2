@@ -1,0 +1,59 @@
+{
+  "scope": "Black floating navigation with idle, hover, focus and touch states",
+  "comparison": "existing-system",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/site-header.tsx",
+      "sha256": "e55388164e0cad8fec3cb4f9ffc94343767b332e928dc437765bfdcb7f880696"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "412caa249a5fd61402ce2c8ac604413598880093390ccd7b02bb5645f5659595"
+    }
+  ],
+  "environment": "Playwright CLI, installed Chromium 1248, headless",
+  "checks": {
+    "desktop": "1440x900: idle navigation hidden; hover expands island and reveals Work",
+    "keyboard": "Focus home -> Tab focuses Work -> Enter navigates to #work; keyboard capture saved",
+    "touch": "320x740, touch emulation: links visible, no overflow, Work tap navigates #work",
+    "mobile": "390x844 capture saved, no horizontal overflow",
+    "reducedMotion": "Computed navigation transition duration is 0s",
+    "quality": "bun run check and bun run build pass",
+    "console": "No errors in final run; expected Motion reduced-motion warning"
+  },
+  "captures": [
+    {
+      "path": "keyboard.png",
+      "sha256": "6534c65b61551965109f60a8bd680c35278f2d7cefb21fdbe1e20bfc3830f203"
+    },
+    {
+      "path": "idle.png",
+      "sha256": "f1a2d3679a24094fbc9ae10dd8a66b88d14ef7f60a7028628b7d4a643db539d6"
+    },
+    {
+      "path": "mobile.png",
+      "sha256": "543996e2b6b7b1f24e8c863573a199098fc0b2a123ff715515ace584a321a1f7"
+    },
+    {
+      "path": "touch-320.png",
+      "sha256": "53fa6a45b0e731637c88ed21e5dc5f0315de3d1ee05c7ad848ac1788438d424f"
+    },
+    {
+      "path": "expanded.png",
+      "sha256": "421c46ca8f0fc60990eabb9d78a86d928f048640141af4cc45503bd9acbacc47"
+    }
+  ],
+  "skills": {
+    "karpathy-guidelines": "Scoped header/CSS edits, no new dependencies",
+    "ultracite": "Format, check and build completed",
+    "ui-taste": "Existing layout preserved, inspected desktop and touch captures",
+    "antislop": "Minimal collapsed wordmark, working destinations, no added decoration",
+    "animation-performance": "Bounded max-width transition confined to fixed island; opacity reveal; no per-frame React state; reduced-motion disables transition",
+    "design-auditor": "Source and browser review of responsive navigation, keyboard focus, semantics and touch targets",
+    "playwright-cli": "Actual CLI assertions and screenshots using installed Chromium"
+  },
+  "limitations": [
+    "No physical-device frame timing or motion video analysis",
+    "External mail and resume destinations retained; not opened"
+  ]
+}

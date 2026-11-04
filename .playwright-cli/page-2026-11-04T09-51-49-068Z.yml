@@ -1,0 +1,44 @@
+- generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+        - /url: "#main"
+    - banner:
+        - generic:
+            - link "Farkhan Muhammad home" [ref=e4] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e5]: farkhan.
+            - button [ref=e6] [cursor=pointer]:
+                - generic [ref=e7]:
+                    - text: Menu
+                    - generic [aria-hidden] [ref=e8]: +
+    - generic "Page content" [ref=e10]:
+        - generic [ref=e12]:
+            - main [ref=e13]:
+                - generic [ref=e14]:
+                    - region [ref=e15]:
+                        - heading "From interface to infrastructure." [level=1] [ref=e16]:
+                            - generic [aria-hidden] [ref=e18]:
+                                - generic [ref=e19]: From interface
+                                - generic [ref=e20]: to infrastructure.
+                        - paragraph [ref=e21]: I build web applications from end to end.
+                        - generic [ref=e22]:
+                            - link "Contact" [ref=e23] [cursor=pointer]:
+                                - /url: mailto:farkhanmuhammad@outlook.com
+                            - link "GitHub" [ref=e24] [cursor=pointer]:
+                                - /url: https://github.com/farkhanmhd
+                    - region [ref=e25]:
+                        - heading "Selected work" [level=2] [ref=e26]
+                        - generic [ref=e27]:
+                            - generic [ref=e28]:
+                                - heading "UAS Menyapa" [level=3] [ref=e29]
+                                - generic [ref=e30]: Case study in progress
+                            - paragraph [ref=e31]: An event ticketing web application.
+                            - list [ref=e32]:
+                                - listitem [ref=e33]: Ticket purchases
+                                - listitem [ref=e34]: QR code generation
+                                - listitem [ref=e35]: Ticket scanning
+                            - link "Read project notes" [ref=e36] [cursor=pointer]:
+                                - /url: /projects/uas-menyapa
+            - contentinfo [ref=e39]:
+                - text: Farkhan Muhammad
+                - link "Get in touch" [ref=e40] [cursor=pointer]:
+                    - /url: mailto:farkhanmuhammad@outlook.com

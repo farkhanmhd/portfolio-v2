@@ -1,0 +1,74 @@
+- generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+        - /url: "#main"
+    - banner:
+        - generic:
+            - link "Farkhan Muhammad home" [ref=e4] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e5]: farkhan.
+            - button [ref=e6] [cursor=pointer]:
+                - generic [ref=e7]:
+                    - text: Menu
+                    - generic [aria-hidden] [ref=e8]: +
+    - generic "Page content" [ref=e10]:
+        - generic [ref=e12]:
+            - main [ref=e13]:
+                - generic [ref=e14]:
+                    - region [ref=e15]:
+                        - heading "From interface to infrastructure." [level=1] [ref=e16]:
+                            - generic [aria-hidden] [ref=e18]:
+                                - generic [aria-hidden] [ref=e20]:
+                                    - generic [ref=e21]: Z
+                                    - generic [ref=e23]: "3"
+                                    - generic [ref=e25]: C
+                                    - generic [ref=e27]: J
+                                    - generic [ref=e31]: i
+                                    - generic [ref=e33]: d
+                                    - generic [ref=e35]: H
+                                    - generic [ref=e37]: x
+                                    - generic [ref=e39]: H
+                                    - generic [ref=e41]: c
+                                    - generic [ref=e43]: Z
+                                    - generic [ref=e45]: m
+                                    - generic [ref=e47]: L
+                                - generic [aria-hidden] [ref=e50]:
+                                    - generic [ref=e51]: V
+                                    - generic [ref=e53]: e
+                                    - generic [ref=e57]: T
+                                    - generic [ref=e59]: M
+                                    - generic [ref=e61]: R
+                                    - generic [ref=e63]: "N"
+                                    - generic [ref=e65]: "6"
+                                    - generic [ref=e67]: P
+                                    - generic [ref=e69]: k
+                                    - generic [ref=e71]: F
+                                    - generic [ref=e73]: "n"
+                                    - generic [ref=e75]: "1"
+                                    - generic [ref=e77]: S
+                                    - generic [ref=e79]: J
+                                    - generic [ref=e81]: "5"
+                                    - generic [ref=e83]: "1"
+                                    - generic [ref=e85]: V
+                        - paragraph [ref=e87]: I build web applications from end to end.
+                        - generic [ref=e88]:
+                            - link "Contact" [ref=e89] [cursor=pointer]:
+                                - /url: mailto:farkhanmuhammad@outlook.com
+                            - link "GitHub" [ref=e90] [cursor=pointer]:
+                                - /url: https://github.com/farkhanmhd
+                    - region [ref=e91]:
+                        - heading "Selected work" [level=2] [ref=e92]
+                        - generic [ref=e93]:
+                            - generic [ref=e94]:
+                                - heading "UAS Menyapa" [level=3] [ref=e95]
+                                - generic [ref=e96]: Case study in progress
+                            - paragraph [ref=e97]: An event ticketing web application.
+                            - list [ref=e98]:
+                                - listitem [ref=e99]: Ticket purchases
+                                - listitem [ref=e100]: QR code generation
+                                - listitem [ref=e101]: Ticket scanning
+                            - link "Read project notes" [ref=e102] [cursor=pointer]:
+                                - /url: /projects/uas-menyapa
+            - contentinfo [ref=e105]:
+                - text: Farkhan Muhammad
+                - link "Get in touch" [ref=e106] [cursor=pointer]:
+                    - /url: mailto:farkhanmuhammad@outlook.com

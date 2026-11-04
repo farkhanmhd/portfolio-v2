@@ -1,0 +1,46 @@
+{
+  "scope": "Separate smaller name and menu islands",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/site-header.tsx",
+      "sha256": "c5e5200f1fa64a4a6b8e7535663d793626d62de33d73fe23164f061191fca1ee"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "eac9bbe526916564c38be8e35e4229b477319d568a4d15656332629bb3846f39"
+    }
+  ],
+  "verification": [
+    "Playwright CLI with installed Chromium: 1440x900 idle/hover, keyboard home -> Menu -> Work -> Enter navigates #work",
+    "Reduced-motion computed transition duration 0s",
+    "320x740 touch screenshot visually inspected: separated islands and all menu links visible",
+    "bun run check and bun run build pass"
+  ],
+  "captures": [
+    {
+      "path": "touch.png",
+      "sha256": "92a9be96cec58a69c254e8760e63a1fea67769dd3559b66bec748be05b664337"
+    },
+    {
+      "path": "idle.png",
+      "sha256": "48c1ef195ef190cdb655a67aa047e973de2fda24c1f4c63da401eff931fb20f3"
+    },
+    {
+      "path": "hover.png",
+      "sha256": "3acd155e0251382baed6ab203164a028139e49d37054f608388acc75157d01b5"
+    }
+  ],
+  "skills": {
+    "karpathy-guidelines": "Scoped header and CSS changes",
+    "ultracite": "Formatting, lint and build",
+    "ui-taste": "Preserved minimalist black visual language; inspected captures",
+    "antislop": "Real destinations, compact shapes and usable targets",
+    "animation-performance": "Bounded fixed navigation expansion with reduced-motion override",
+    "design-auditor": "Responsive, keyboard, target size and semantics review",
+    "playwright-cli": "Actual browser assertions and captures"
+  },
+  "limitations": [
+    "Console favicon.ico 404",
+    "No physical-device frame profiling or video analysis"
+  ]
+}

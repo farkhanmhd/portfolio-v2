@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "uizze.visual-evidence.v1",
+  "scope": "Portfolio layout redesign",
+  "platform": "web",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/home-page.tsx",
+      "sha256": "62cd5342d17c534d078c9a23a9b7b5b60f707c62e76a3250e48d86e087299370"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "58d77cfbaccfc162f87bcde79b89902f19e686b9ed68d39d420dc2aa4d385879"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/selected-work.tsx",
+      "sha256": "a3c23c5f2270be1aec8d06ae0d3bd39bb6a65faa33ae14b1a665380714a19c3e"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/site-header.tsx",
+      "sha256": "7214812012e98910ed092582cabd325c4fa796260754c9273d9548e32a3ecd9e"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "c6250e29b1498fa82e1ee4312e069da1616c8902180177dec8893394069d1124"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/content/projects.ts",
+      "sha256": "e749f9f0e3318488d9729eb247e209e50cb247c96a80e075d58b8f6f7187b000"
+    }
+  ],
+  "comparison": "target",
+  "target": {
+    "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/target.png",
+    "sha256": "2ce7ce5dc63ca01f07048c67251c4f0a88be3e8d30952d32fd97e348d741654c",
+    "kind": "image"
+  },
+  "requiredChecks": [
+    {
+      "id": "desktop",
+      "kind": "visual"
+    },
+    {
+      "id": "mobile",
+      "kind": "visual"
+    }
+  ],
+  "checks": [
+    {
+      "id": "desktop",
+      "status": "pass",
+      "state": "Home, settled content",
+      "environment": {
+        "kind": "browser",
+        "name": "Chromium via Playwright CLI",
+        "width": 1440,
+        "height": 1000
+      },
+      "observed": "Inspected composition, readable content and no horizontal overflow. Reference used as layout direction; no pixel-exact claim.",
+      "artifacts": [
+        {
+          "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/desktop.png",
+          "sha256": "20476afdf434c6a2160607a7bb406167db0f1be146c3d8e230ac2014733d47f5",
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "status": "pass",
+      "state": "Home, settled content",
+      "environment": {
+        "kind": "browser",
+        "name": "Chromium via Playwright CLI",
+        "width": 390,
+        "height": 844
+      },
+      "observed": "Inspected composition, readable content and no horizontal overflow. Reference used as layout direction; no pixel-exact claim.",
+      "artifacts": [
+        {
+          "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/mobile.png",
+          "sha256": "900b493f5271437e4a857e76ea511d8cff0f3e1e3eb2b71f91569b07cfe6b12d",
+          "kind": "image"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    "Normal-motion video and physical-device performance not measured; reduced-motion computed styles verified.",
+    "External app destinations inspected only."
+  ]
+}

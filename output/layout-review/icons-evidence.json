@@ -1,0 +1,55 @@
+{
+  "scope": "Matching outline hero buttons with HugeIcons",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "636bab71df9b1421970668396bf42fbf484824b10ac00c3d61617a4e83d0ce7f"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/ui/button.tsx",
+      "sha256": "7f365837dad79fb2c3ba33fc0c856b59effeba82189e3750ad17f5d6c09cd5da"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/ui/button-variants.ts",
+      "sha256": "1795a57ac8cbde3ba3254a8bd96731d8f32b6700db1a0987800f7590556a54bd"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "db49fec5486e04537bf7a383733c6c0c75c6ee1dbca44deb35e589376573e11b"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/package.json",
+      "sha256": "9c3e9a8147d5afe00e2d683c311638a2e7eb34fae8147f38946ab01f58e0a80e"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/bun.lock",
+      "sha256": "e0c1f9abeadf0ac5d09dcf973a21fa953332220384b1851bea0690e112b7d5df"
+    }
+  ],
+  "captures": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/icons-1440.png",
+      "sha256": "43fe2fe4c5d9f27fbcfcabb504f77cd5d0f28b29c6c8387c2d9a526ba382b638"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/icons-390.png",
+      "sha256": "450201fec7236339c51f9a6b17c8267b0b096fb13a368c9220f0647a2bc40964"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/icons-320.png",
+      "sha256": "d8b750723a711fcbb58be7b10b3f9b05db1656a2abc69d09dfef19d6a069c3f6"
+    }
+  ],
+  "verified": [
+    "outline variants",
+    "44px targets",
+    "16px aria-hidden icons",
+    "no overflow",
+    "keyboard focus-visible ring",
+    "reduced-motion rendering"
+  ],
+  "limitations": [
+    "External handlers not launched",
+    "Physical-device performance not tested"
+  ]
+}

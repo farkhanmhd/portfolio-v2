@@ -1,0 +1,54 @@
+{
+  "scope": "Centered dvh hero revision; supersedes previous layout captures",
+  "platform": "web",
+  "comparison": "existing-system with explicit user centering requirement",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "93173953817f5467810adbecf1808b555555e6fddc76dc4b58ab6c9e4294e018"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/home-page.tsx",
+      "sha256": "29614c4b66a864476dfb2b38b4309a4873a466143a0bc7d0a655ec18c811d5d5"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "d54d6c09d211c386f342bf004986fceb7ca945f5336a9d2b9c9f073f9207575d"
+    }
+  ],
+  "checks": [
+    {
+      "viewport": [1440, 1000],
+      "heroHeight": 890,
+      "centerDeltaPixels": "<0.01 on both axes",
+      "horizontalOverflow": 0,
+      "artifact": {
+        "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/centered-1440.png",
+        "sha256": "f42df14b30eba3c8feeb89055aad33181f0d09961c6cb7a8c56eaeb8cd998a4c"
+      }
+    },
+    {
+      "viewport": [390, 844],
+      "heroHeight": 763,
+      "centerDeltaPixels": "<0.01 on both axes",
+      "horizontalOverflow": 0,
+      "artifact": {
+        "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/centered-390.png",
+        "sha256": "a345f479750758849e7f39f6310f21e6b2bf31ff7448400ed9a1686702205e9b"
+      }
+    },
+    {
+      "viewport": [320, 568],
+      "heroHeight": 487,
+      "centerDeltaPixels": "<0.01 on both axes",
+      "horizontalOverflow": 0,
+      "artifact": {
+        "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/centered-320.png",
+        "sha256": "0f14c18a9c74538be93fbfd1bca1c13cf8bdf8610d684826ed085c660ae3942d"
+      }
+    }
+  ],
+  "unresolved": [
+    "Physical-device frame performance not measured; animations unchanged."
+  ]
+}

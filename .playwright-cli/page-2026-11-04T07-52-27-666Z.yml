@@ -1,0 +1,57 @@
+- generic [ref=e2]:
+    - link "Skip to content" [ref=e3] [cursor=pointer]:
+        - /url: "#main"
+    - banner [ref=e4]:
+        - generic [ref=e5]:
+            - link "Farkhan Muhammad home" [ref=e6] [cursor=pointer]:
+                - /url: /
+                - text: farkhan.
+            - navigation "Main navigation" [ref=e7]:
+                - link "Work" [ref=e8] [cursor=pointer]:
+                    - /url: /#work
+                - link "Résumé" [ref=e9] [cursor=pointer]:
+                    - /url: https://drive.google.com/file/d/1mb-CPqJSxnHa2YIgsT_DR5-y20rncqrL/view?usp=sharing
+                - link "Let’s talk" [ref=e10] [cursor=pointer]:
+                    - /url: mailto:farkhanmuhammad@outlook.com
+                    - text: Let’s talk
+                    - generic [ref=e11]: ↗
+    - generic "Page content" [ref=e13]:
+        - generic [ref=e15]:
+            - main [ref=e16]:
+                - generic [ref=e17]:
+                    - complementary "About Farkhan" [ref=e18]:
+                        - generic [ref=e19]:
+                            - generic [ref=e20]:
+                                - paragraph [ref=e21]: Farkhan Muhammad
+                                - paragraph [ref=e22]: Full-stack developer
+                            - generic [ref=e23]:
+                                - paragraph [ref=e24]: I build web applications from end to end. Thoughtful interfaces, dependable backends, and the systems that connect them.
+                                - generic [ref=e25]:
+                                    - link "Email me" [ref=e26] [cursor=pointer]:
+                                        - /url: mailto:farkhanmuhammad@outlook.com
+                                    - link "GitHub" [ref=e27] [cursor=pointer]:
+                                        - /url: https://github.com/farkhanmhd
+                    - generic [ref=e28]:
+                        - region [ref=e29]:
+                            - heading "From interface to infrastructure." [level=1] [ref=e30]:
+                                - generic [ref=e32]:
+                                    - generic [ref=e33]: From interface
+                                    - generic [ref=e34]: to infra-
+                                    - generic [ref=e35]: structure.
+                        - region [ref=e36]:
+                            - heading "Selected work" [level=2] [ref=e37]
+                            - generic [ref=e38]:
+                                - generic [ref=e39]:
+                                    - heading "UAS Menyapa" [level=3] [ref=e40]
+                                    - generic [ref=e41]: Case study in progress
+                                - paragraph [ref=e42]: An event ticketing web application.
+                                - list [ref=e43]:
+                                    - listitem [ref=e44]: Ticket purchases
+                                    - listitem [ref=e45]: QR code generation
+                                    - listitem [ref=e46]: Ticket scanning
+                                - link "Read project notes" [ref=e47] [cursor=pointer]:
+                                    - /url: /projects/uas-menyapa
+            - contentinfo [ref=e50]:
+                - text: Farkhan Muhammad
+                - link "Get in touch" [ref=e51] [cursor=pointer]:
+                    - /url: mailto:farkhanmuhammad@outlook.com

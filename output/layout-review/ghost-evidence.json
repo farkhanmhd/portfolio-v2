@@ -1,0 +1,36 @@
+{
+  "scope": "Ghost hero buttons and borderless header",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "9febe8e48a90255f3b6216a6d50e50a3c622614401132ed57067ea3e2fd12c90"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/site-header.tsx",
+      "sha256": "9e9ebaf397951727c643d968ed9eb4148f5d89f382929332b06cd92efde2b8c1"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "95305e9891d9356c77400bfacd8c05c411dd10066db0d2d661afe89e06ef2aa4"
+    }
+  ],
+  "captures": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/ghost-1440.png",
+      "sha256": "ade39f1ca11ffe9ca3337f7b02d0a86f0860c420c230cf5834cb32b84adeae20"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/ghost-390.png",
+      "sha256": "b4840407ae20c0d0a7df1092d1b0bb76073a23d9c4394117282405f3b2f98a67"
+    }
+  ],
+  "checks": [
+    "ghost variants",
+    "transparent button borders",
+    "header divider absent",
+    "no horizontal overflow",
+    "keyboard focus-visible",
+    "Work navigation"
+  ],
+  "limitations": ["External apps and device frame performance not retested"]
+}

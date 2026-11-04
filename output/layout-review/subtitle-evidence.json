@@ -1,0 +1,36 @@
+{
+  "scope": "Unbroken infrastructure and muted subtitle",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "52cb543a6017c6ca2343c25c6c58dc9cc8ce50d3f2dd2b1f6eb7a58893bee2de"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "db49fec5486e04537bf7a383733c6c0c75c6ee1dbca44deb35e589376573e11b"
+    }
+  ],
+  "captures": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/subtitle-1440.png",
+      "sha256": "f9daed43106e08b96fb650205492447589951feeb7720c53a4f92fa4dd6f2318"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/subtitle-800.png",
+      "sha256": "2d7610d815ca57c3ad301157750ba48377ea88c87c6f120c4c08770485e6909a"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/subtitle-390.png",
+      "sha256": "7ec064b0083bbac0f1fa0bc6b1a2576da01739c42ab118e631657b8700a8b443"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/subtitle-320.png",
+      "sha256": "337b11fee0d472044dac62b3e57eec4a8638f8ac46586bcbd163a19d179bb556"
+    }
+  ],
+  "checks": "No horizontal overflow at all four widths; reduced-motion rendering; desktop and narrow-phone pixels inspected",
+  "limitations": [
+    "External apps and physical-device performance not retested",
+    "Existing header navigation crowded at 320px"
+  ]
+}

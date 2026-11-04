@@ -1,0 +1,66 @@
+{
+  "scope": "Replace GSAP with Motion; project animation standard saved in AGENTS.md",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/staggered-menu.tsx",
+      "sha256": "418d3ab2f4d86e241a6c14401c362ea2092dbefe7526383ffabc7463a04b8e11"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "a71220288dd87a0d75fd76097257ff5210a01d9dd111d2ff4f5a01307f653c25"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/package.json",
+      "sha256": "9c3e9a8147d5afe00e2d683c311638a2e7eb34fae8147f38946ab01f58e0a80e"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/bun.lock",
+      "sha256": "e0c1f9abeadf0ac5d09dcf973a21fa953332220384b1851bea0690e112b7d5df"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/AGENTS.md",
+      "sha256": "e586f4cce684738adfef98ae108f1bb47e329b7cd587d02a2092a9ae60b20035"
+    }
+  ],
+  "checks": [
+    "bun run check and bun run build pass",
+    "No GSAP references in src, package.json or bun.lock",
+    "Playwright CLI desktop and 320px mobile: open, close, focus containment, Escape, outside dismissal, focus return, Work navigation, rapid close/reopen passed",
+    "Reduced motion identity transform checked; mobile reduced motion capture inspected"
+  ],
+  "captures": [
+    {
+      "path": "desktop-open.png",
+      "sha256": "414ff12628a4fad499b564d22fe54a290a25f0cad4ff7d889c6a23a38aec6c33"
+    },
+    {
+      "path": "idle.png",
+      "sha256": "50dcb1bcbf20aed31c5cb4c01111c1ef2806d7776b16032470a05237cef590ab"
+    },
+    {
+      "path": "mobile-open.png",
+      "sha256": "2803958610ea0336298224763712a040b83805c6678de80ecb36c9e2da7054f3"
+    },
+    {
+      "path": "mobile-idle.png",
+      "sha256": "2143554376dc920e5b1731a2bbe86ab71dc5ee675b4bcbdd1c71b91710e781e2"
+    }
+  ],
+  "skills": {
+    "karpathy-guidelines": "Focused engine replacement and dependency removal",
+    "ultracite": "Formatting, lint and build",
+    "framer-motion-react": "Declarative variants, keyed AnimatePresence and reduced-motion hook",
+    "animation-performance": "Full transform strings and opacity; no frame-by-frame React state",
+    "vercel-composition-patterns": "Existing Radix and panel composition preserved",
+    "shadcn": "Radix asChild integration and accessible dialog title retained",
+    "ui-taste": "Existing-system visual comparison",
+    "antislop": "Existing destinations, accessible keyboard and motion behavior retained",
+    "design-auditor": "Scoped visual, responsive, focus and reduced-motion checks",
+    "playwright-cli": "Actual CLI assertions and captures"
+  },
+  "limitations": [
+    "Bundle warning remains at approximately 527kB minified",
+    "No physical-device profiling or motion video inspection",
+    "External links not activated"
+  ]
+}

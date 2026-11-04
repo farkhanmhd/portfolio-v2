@@ -1,0 +1,7 @@
+# Simplified hero receipt
+
+Applied Karpathy: changed only hero composition and removed its profile rail. Composition patterns: direct Hero/SelectedWork composition without new props or state. UI Taste/Antislop: used explicit user direction for a full-width headline and two functional actions; no invented imagery or claims. Shadcn: reused Button with asChild and secondary/outline variants; both native anchors have 44px minimum targets. Ultracite: fix, check and build passed. Design Auditor and Playwright CLI: inspected 1440×1000 and 390×844 captures; measured zero overflow at those sizes and 320×568. Hero heights remain viewport minus header. Contact has the retained mailto address; GitHub has the retained URL and safe external rel. Tab moves from Contact to GitHub. Work and project notes navigation passed. Reduced-motion content was captured. Normal-motion performance and external app launch were not tested.
+
+Scoped delivery gate PASS: explicit requested content only; no profile rail; readable type and existing AA palette; no overflow at three sizes; real link destinations; 44px touch targets; no new fabricated facts, assets, asynchronous states, forms, patterns or animation. Prior gate findings for unchanged navigation/content remain source findings. Existing animation implementation is unchanged.
+
+Captures: simple-1440.png, simple-390.png, simple-320.png. These supersede earlier hero captures.

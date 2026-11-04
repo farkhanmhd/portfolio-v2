@@ -1,0 +1,51 @@
+{
+  "scope": "Simplified full-width hero",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/home-page.tsx",
+      "sha256": "8b78e2f94305d3c45c82adf13f990c046fa3bca2af1ce97cfa53fed682c20ce4"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "563886eb83c8f08b93af7c461dccaf9bf48d119a94f6868aa56991dc0c60e80a"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/ui/button.tsx",
+      "sha256": "7f365837dad79fb2c3ba33fc0c856b59effeba82189e3750ad17f5d6c09cd5da"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/ui/button-variants.ts",
+      "sha256": "1795a57ac8cbde3ba3254a8bd96731d8f32b6700db1a0987800f7590556a54bd"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "d54d6c09d211c386f342bf004986fceb7ca945f5336a9d2b9c9f073f9207575d"
+    }
+  ],
+  "captures": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/simple-1440.png",
+      "sha256": "6f310d90d996174637b7fb267892c83c3a12cf8d26648118a3f916cd2a052c79"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/simple-390.png",
+      "sha256": "5e3a4c450a606f25df58b0a46b920a9e31bce47e45ae786b9dd69cdb38c0b663"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/output/layout-review/simple-320.png",
+      "sha256": "6ca7f897c4aa9d9ce04539085f186df57bf3f9be1542499187ecaa930e1cc1ef"
+    }
+  ],
+  "verified": [
+    "no horizontal overflow at three sizes",
+    "viewport minus header height",
+    "44px action targets",
+    "Contact to GitHub keyboard order",
+    "local work/project navigation",
+    "reduced-motion rendering"
+  ],
+  "limitations": [
+    "External handlers not launched",
+    "Physical device frame performance not measured"
+  ]
+}

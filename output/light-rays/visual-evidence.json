@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "uizze.visual-evidence.v1",
+  "scope": "React Bits LightRays behind existing portfolio hero",
+  "platform": "web",
+  "comparison": "existing-system",
+  "sources": [
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/hero.tsx",
+      "sha256": "7cf7a4524e3baaf43f7090ad80e92e2779c212d0b298914117d538229ffa3d4d"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/components/light-rays.tsx",
+      "sha256": "827ac1144d902aae14b9fe47a7d2c022bb0043f7083f3e20a0e9797ee338b353"
+    },
+    {
+      "path": "/Users/farkhanmhd/Documents/ChatGPT/Personal Portfolio/src/index.css",
+      "sha256": "95305e9891d9356c77400bfacd8c05c411dd10066db0d2d661afe89e06ef2aa4"
+    }
+  ],
+  "requiredChecks": [
+    {
+      "id": "desktop",
+      "kind": "visual"
+    },
+    {
+      "id": "mobile",
+      "kind": "visual"
+    }
+  ],
+  "checks": [
+    {
+      "id": "desktop",
+      "status": "pass",
+      "state": "Hero, light rays and actions",
+      "environment": {
+        "kind": "browser",
+        "name": "In-app browser",
+        "width": 1440,
+        "height": 900
+      },
+      "observed": "Headline and actions remain readable with no clipping. Existing palette and centered composition retained.",
+      "artifacts": [
+        {
+          "path": "desktop.png",
+          "kind": "image",
+          "sha256": "db19df81e16262bcc69c7d568a0210d48412ccdc6f83078eb86433ca0b1daf99"
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "status": "pass",
+      "state": "Hero, light rays and actions",
+      "environment": {
+        "kind": "browser",
+        "name": "In-app browser",
+        "width": 390,
+        "height": 844
+      },
+      "observed": "Headline and actions remain readable with no clipping. Existing palette and centered composition retained.",
+      "artifacts": [
+        {
+          "path": "mobile.png",
+          "kind": "image",
+          "sha256": "6adc60da004465ac75a09a1ea6860cf74009a40b8d89f103e632f2c3b253007b"
+        }
+      ]
+    }
+  ],
+  "interactionNotes": [
+    "Pause click changes label to Resume light and pressed state to true.",
+    "Enter on Resume light restores Pause light and pressed state false.",
+    "Visible keyboard focus ring inspected.",
+    "No captured console errors.",
+    "Contact and GitHub destinations verified from accessibility tree; external destinations not activated."
+  ],
+  "unresolved": [
+    "Reduced-motion preference reviewed in source; browser emulation unavailable.",
+    "Real-device frame timing and WebGL context recovery not exercised.",
+    "Playwright CLI unavailable; in-app browser used."
+  ]
+}
