@@ -65,6 +65,10 @@ const MenuPanel = ({ close }: { close: () => void }) => {
               <Link
                 className="menu-label inline-flex min-h-11 cursor-pointer items-center no-underline"
                 hash="work"
+                hashScrollIntoView={{
+                  behavior: reducedMotion === true ? "instant" : "smooth",
+                  block: "start",
+                }}
                 onClick={close}
                 to="/"
               >

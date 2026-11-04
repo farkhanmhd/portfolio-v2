@@ -19,11 +19,11 @@ export const ScrollReveal = ({ children }: { children: ReactNode }) => {
       whileInView="visible"
     >
       <motion.div
-        className="focus-within:opacity-100! focus-within:[clip-path:inset(0)]! motion-reduce:opacity-100! motion-reduce:[clip-path:inset(0)]!"
-        transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+        className="focus-within:transform-none! focus-within:opacity-100! motion-reduce:transform-none! motion-reduce:opacity-100!"
+        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
         variants={{
-          hidden: { opacity: 0, clipPath: "inset(0 0 100% 0)" },
-          visible: { opacity: 1, clipPath: "inset(0 0 0% 0)" },
+          hidden: { opacity: 0, transform: "translateY(24px)" },
+          visible: { opacity: 1, transform: "translateY(0px)" },
         }}
       >
         {children}
