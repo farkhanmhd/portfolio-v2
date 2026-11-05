@@ -12,6 +12,7 @@
   --text-display-tablet: clamp(48px, 10vw, 80px);
   --text-display-phone: clamp(24px, 7.3vw, 35px);
   --text-contact: clamp(48px, 8vw, 104px);
+  --text-section-phone: clamp(32px, 10vw, 48px);
   --text-contact-email: clamp(18px, 3vw, 36px);
   --leading-profile: 1.15;
   --leading-display: 0.98;
@@ -19,6 +20,10 @@
   --tracking-display: -0.055em;
   --color-line: #30302e;
   --color-highlight: #78a9ff;
+  --color-horizon-warm: #e5aeff;
+  --color-horizon-cool: #6960ec;
+  --color-horizon-rim: #fff2ff;
+  --color-horizon-planet: #0c0911;
   --color-link: #85857d;
   --text-caption: 13px;
   --text-body-small: 15px;
@@ -107,6 +112,29 @@
 }
 
 @layer components {
+  .carousel {
+    contain: inline-size;
+  }
+  .horizon-background {
+    left: calc(50% - 50vw);
+    width: 100vw;
+    z-index: -1;
+  }
+  .horizon-warm-stop {
+    stop-color: var(--color-horizon-warm);
+  }
+  .horizon-cool-stop {
+    stop-color: var(--color-horizon-cool);
+  }
+  .horizon-rim-stop {
+    stop-color: var(--color-horizon-rim);
+  }
+  .horizon-planet-stop {
+    stop-color: var(--color-horizon-planet);
+  }
+  .horizon-cool-stroke {
+    stroke: var(--color-horizon-cool);
+  }
   .profile-section {
     @apply max-phone:py-12 flex min-h-dvh scroll-mt-[calc(var(--header-height)+24px)] flex-col justify-center py-20;
   }

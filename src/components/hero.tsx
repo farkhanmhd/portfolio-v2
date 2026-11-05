@@ -10,7 +10,8 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Link } from "@tanstack/react-router";
 import { motion, useReducedMotion } from "motion/react";
 
-import { DecryptedText } from "./decrypted-text";
+import { HorizonBloom } from "./horizon-bloom";
+import { StaggeredText } from "./staggered-text";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
@@ -19,35 +20,14 @@ export const Hero = () => {
   return (
     <section
       aria-labelledby="hero-title"
-      className="min-h-hero-panel flex flex-col items-center justify-center gap-10 py-10 text-center"
+      className="min-h-hero-panel relative isolate flex flex-col items-center justify-center gap-10 py-10 text-center"
     >
+      <HorizonBloom />
       <h1
         className="max-tablet:text-display-tablet max-phone:text-display-phone text-display leading-display tracking-display m-0"
         id="hero-title"
       >
-        <span className="sr-only">From interface to infrastructure.</span>
-        <span aria-hidden="true">
-          {["From interface", "to infrastructure."].map((line, index) => (
-            <motion.span
-              whileInView={{ opacity: 1, transform: "translateY(0)" }}
-              viewport={{ once: true }}
-              className="block whitespace-nowrap motion-reduce:transform-none! motion-reduce:opacity-100!"
-              initial={
-                reducedMotion === true
-                  ? false
-                  : { opacity: 0, transform: "translateY(20px)" }
-              }
-              key={line}
-              transition={{
-                duration: 0.55,
-                delay: 0.15 + index * 0.12,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-            >
-              <DecryptedText delay={0.55 + index * 0.15} text={line} />
-            </motion.span>
-          ))}
-        </span>
+        <StaggeredText text={"From interface\nto infrastructure."} />
       </h1>
       <motion.p
         initial={

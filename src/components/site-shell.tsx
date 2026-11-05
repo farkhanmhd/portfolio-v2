@@ -40,17 +40,25 @@ export const SiteShell = ({ children }: { children: ReactNode }) => {
                 <span>Farkhan Muhammad</span>
                 <div className="flex items-center gap-6">
                   <Link
-                    className="hover:text-foreground underline transition-colors"
+                    className="hover:text-foreground transition-colors"
                     to="/resume"
                   >
                     Résumé
                   </Link>
                   <Link
-                    className="hover:text-foreground underline transition-colors"
+                    className="hover:text-foreground transition-colors"
                     to="/certificates"
                   >
                     Certificates
                   </Link>
+                  <a
+                    className="hover:text-foreground transition-colors"
+                    href="https://github.com/farkhanmhd"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Github
+                  </a>
                 </div>
                 <span>© {currentYear}</span>
               </footer>

@@ -23,7 +23,7 @@ export const SiteHeader = () => {
           className="font-heading font-wordmark tracking-wordmark pointer-events-auto flex min-h-11 shrink-0 cursor-pointer items-center rounded-full text-lg no-underline"
           to="/"
         >
-          <span className="border-border rounded-full border bg-black px-4 py-1.5 leading-5">
+          <span className="leading-5">
             farkhan<span aria-hidden="true">.</span>
           </span>
         </Link>
