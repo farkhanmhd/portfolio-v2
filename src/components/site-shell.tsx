@@ -31,7 +31,7 @@ export const SiteShell = ({ children }: { children: ReactNode }) => {
             "aria-label": "Page content",
           }}
         >
-          <div className="flex min-h-dvh flex-col pt-(--header-height)">
+          <div className="flex min-h-dvh flex-col bg-black pt-(--header-height)">
             <main className="page-width flex-1" id="main" tabIndex={-1}>
               {children}
             </main>
