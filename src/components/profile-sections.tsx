@@ -299,7 +299,7 @@ export const ProfileSections = () => (
     </section>
     <section
       aria-labelledby="contact-title"
-      className="profile-section text-center [contain:inline-size]"
+      className="profile-section text-center contain-[inline-size]"
       id="contact"
     >
       <ScrollReveal>

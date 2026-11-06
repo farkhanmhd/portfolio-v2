@@ -37,7 +37,10 @@ export const SiteShell = ({ children }: { children: ReactNode }) => {
             </main>
             <ScrollReveal>
               <footer className="page-width text-muted-foreground flex flex-wrap items-center justify-between gap-4 py-6 text-xs">
-                <span>Farkhan Muhammad</span>
+                <div className="flex gap-2">
+                  <span>Farkhan Muhammad</span>
+                  <span>© {currentYear}</span>
+                </div>
                 <div className="flex items-center gap-6">
                   <Link
                     className="hover:text-foreground transition-colors"
@@ -60,7 +63,6 @@ export const SiteShell = ({ children }: { children: ReactNode }) => {
                     Github
                   </a>
                 </div>
-                <span>© {currentYear}</span>
               </footer>
             </ScrollReveal>
           </div>
